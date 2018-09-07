@@ -4,6 +4,10 @@ resource "random_id" "random" {
   }
 
   byte_length = 8
+  
+    tags {
+    Name = "Random"
+  }
 }
 
 output "random" {
